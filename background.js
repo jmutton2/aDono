@@ -19,20 +19,29 @@ const defaultFilters = [
     "*://*.moatads.com/*",
     "*://*.adform.net/*",
     "*://*.reference.com/*",
-    "*://*.youtube.com/"
+    "https://en.wikipedia.org/wiki/NewPage",
+
 ]
 
 chrome.webRequest.onBeforeRequest.addListener(
 
+    //Callback for addListener()
     function(details) {
-        console.log("Fuck this ad lol: " + details.url);
-        return {
-            //cancel: true, //This just blocks all request
-            // redirectURL: "https://images.hdqwalls.com/wallpapers/akali-league-of-legends-cool-art-4k-q5.jpg"
-            redirectURL: "localhost:2000"
+        var javascriptCode = loadSynchronously(details.url);
+        if (!details.url == "") {
+            
+        }
+        //List of accepted ad urls
+        if (!details.url.startsWith('https://images.hdqwalls.com/wallpapers/akali-league-of-legends-cool-art-4k-q5.jpg')) {
+            return {
+                redirectUrl: 'https://images.hdqwalls.com/wallpapers/akali-league-of-legends-cool-art-4k-q5.jpg'
+            };
         }},
-        {
-            urls: defaultFilters
-        },
-        ["blocking"]
-)
+    //Filter for addListener()
+    {
+        types: ['main_frame', 'sub_frame'],
+        urls: defaultFilters
+    },
+    //Extra infoSpec for addListener()
+    ["blocking"]
+) 
