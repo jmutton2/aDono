@@ -3,10 +3,6 @@ body{
     margin: 8px;
 }
 
-.bg-main{
-    
-}
-
 .header{
     text-align: center;
     background-color: #D4AF37;
@@ -23,6 +19,35 @@ body{
     color: white;
     font-weight: bold;
 }
+
+
+.btn-save:hover{
+  cursor: pointer;
+}
+
+.btn-save{
+  position: absolute;
+  left: 35%;
+  bottom: 3%;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #D4AF37;
+  border: none;
+  color: black;
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-save:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
