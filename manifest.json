@@ -2,7 +2,7 @@
     "name": "aDono",
     "version": "1.0",
     "description": "aDono",
-    "permissions": ["webRequest", "webRequestBlocking","storage","declarativeContent"],
+    "permissions": ["webRequest", "webRequestBlocking","storage","declarativeContent", "*://*/*"],
     "background": {
         "scripts": ["./block.js"],
         "persistent": true
