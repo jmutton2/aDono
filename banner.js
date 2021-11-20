@@ -14,7 +14,6 @@ chrome.tabs.onUpdated.addListener(
             });
         }
     });
-    "optional_permissions":"<all_urls>",
 
 // var imgURL = document.createElement('img');
 // var imgURL = chrome.runtime.getURL("https://c4.wallpaperflare.com/wallpaper/320/142/500/akali-league-of-legends-akali-league-of-legends-league-of-legends-k-da-video-games-hd-wallpaper-preview.jpg");
