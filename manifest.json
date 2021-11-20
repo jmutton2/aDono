@@ -2,9 +2,9 @@
     "name": "aDono",
     "version": "1.0",
     "description": "aDono",
-    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+    "permissions": ["scripting","webRequest", "webRequestBlocking", "<all_urls>"],
     "background": {
-        "scripts": ["./background.js"]
+        "scripts": ["./block.js", "./banner.js"]
     },
     "manifest_version": 2
 }

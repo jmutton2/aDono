@@ -27,16 +27,10 @@ chrome.webRequest.onBeforeRequest.addListener(
 
     //Callback for addListener()
     function(details) {
-        var javascriptCode = loadSynchronously(details.url);
-        if (!details.url == "") {
-            
-        }
-        //List of accepted ad urls
-        if (!details.url.startsWith('https://images.hdqwalls.com/wallpapers/akali-league-of-legends-cool-art-4k-q5.jpg')) {
             return {
-                redirectUrl: 'https://images.hdqwalls.com/wallpapers/akali-league-of-legends-cool-art-4k-q5.jpg'
+                cancel: true
             };
-        }},
+        },
     //Filter for addListener()
     {
         types: ['main_frame', 'sub_frame'],
