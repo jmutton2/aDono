@@ -3,9 +3,8 @@
     "version": "1.0",
     "description": "aDono",
     "permissions": ["webRequest", "webRequestBlocking","storage","declarativeContent"],
-    "optional_permissions":"<all_urls>",
     "background": {
-        "scripts": ["./block.js", "./banner.js"],
+        "scripts": ["./block.js"],
         "persistent": true
     },
     "browser_action": {

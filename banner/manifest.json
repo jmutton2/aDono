@@ -1,0 +1,19 @@
+{
+    "name": "aDono",
+    "version": "1.0",
+    "description": "aDono",
+    "permissions": ["scripting","activeTab", "tabs"],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "background": {
+        "service_worker":"background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["background.js"]
+        }
+      ],
+    "manifest_version": 3
+}
