@@ -52,7 +52,6 @@
     color: black;
     font-weight: bold;
     background-color: #FFBC11;
-    /* border-radius: 10px; */
     border-top-right-radius:20px;
     border-bottom-right-radius:20px;
     margin-right: 10px;
@@ -140,7 +139,6 @@
     transform: translateX(26px);
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
     padding:10px;
