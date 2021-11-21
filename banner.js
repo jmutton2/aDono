@@ -1,7 +1,7 @@
 const init = function() {
     const injectElement = document.createElement('div');
     injectElement.className = 'somerandomelementlol';
-    injectElement.style.background = 'rgb(63, 163, 77)';
+    injectElement.style.background = 'rgb(100, 150, 53)';
     injectElement.style.borderTop = '4px';
     injectElement.style.top = 0;
     injectElement.style.position = 'fixed';
